@@ -6,6 +6,20 @@
         <title><g:message code="default.create.label" args="[entityName]" /></title>
     </head>
     <body>
+        <style>
+          div.contenedor1{
+            display: grid; 
+            grid-template-columns: 1fr;
+            background-color: green;
+            font-family: "Times New Roman", Times, serif;
+            border: #333 1px solid;
+            color: wheat;
+            justify-items: center;
+          }
+        </style>
+        <div class = "contenedor1">
+                <h1> Create a new trip </h1>
+        </div>
         <a href="#create-trip" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
         <div class="nav" role="navigation">
             <ul>
@@ -14,7 +28,9 @@
             </ul>
         </div>
         <div id="create-trip" class="content scaffold-create" role="main">
-            <h1><g:message code="default.create.label" args="[entityName]" /></h1>
+            
+
+
             <g:if test="${flash.message}">
             <div class="message" role="status">${flash.message}</div>
             </g:if>

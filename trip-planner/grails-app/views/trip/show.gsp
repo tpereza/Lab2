@@ -6,6 +6,17 @@
         <title><g:message code="default.show.label" args="[entityName]" /></title>
     </head>
     <body>
+        <style>
+          div.contenedor1{
+            display: grid; 
+            grid-template-columns: 1fr;
+            background-color: green;
+            font-family: "Times New Roman", Times, serif;
+            border: #333 1px solid;
+            color: wheat;
+            justify-items: center;
+          }
+        </style>
         <a href="#show-trip" class="skip" tabindex="-1"><g:message code="default.link.skip.label" default="Skip to content&hellip;"/></a>
         <div class="nav" role="navigation">
             <ul>
@@ -15,7 +26,9 @@
             </ul>
         </div>
         <div id="show-trip" class="content scaffold-show" role="main">
-            <h1><g:message code="default.show.label" args="[entityName]" /></h1>
+            <div class = "contenedor1">
+                <h1> The trip you were looking for </h1>
+            </div>
             <g:if test="${flash.message}">
             <div class="message" role="status">${flash.message}</div>
             </g:if>
