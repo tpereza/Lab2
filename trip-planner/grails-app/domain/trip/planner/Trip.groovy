@@ -1,9 +1,12 @@
 package trip.planner
 
 class Trip {
-    String name
-    Integer age
-    Date lastVisit
+    String nameOfThePlace
+    Integer durationOfTheTrip
+    Date arrivalDate
     static constraints = {
+     nameOfThePlace blank: false
+     arrivalDate blank: false
+     durationOfTheTrip nullable: true
     }
 }
