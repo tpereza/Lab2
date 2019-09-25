@@ -16,6 +16,18 @@
             color: wheat;
             justify-items: center;
           }
+        div.contenedor2{
+            display: grid; 
+            grid-template-columns: 1fr;
+            background-color: wheat;
+            font-family: "Times New Roman", Times, serif;
+            justify-items: center;
+          }
+
+          div.bottom-two {
+              margin-top: 0.5cm;
+              margin-bottom: 0.5cm;
+            }
         </style>
         <div class = "contenedor1">
                 <h1> Create a new trip </h1>
@@ -27,10 +39,17 @@
                 <li><g:link class="list" action="index"><g:message code="default.list.label" args="[entityName]" /></g:link></li>
             </ul>
         </div>
+        <div class = "contenedor1">
+                <h1> Info </h1>
+        </div>
+        <div class = "contenedor2">
+            <div class = "bottom-two">
+            <h4>The Name of the Destiny is mandatory</h4>
+            <h4>The Arrival Date is mandatory</h4>
+            <h4>The Duration Of The Trip is not mandatory</h4>
+            </div>
+        </div>
         <div id="create-trip" class="content scaffold-create" role="main">
-            
-
-
             <g:if test="${flash.message}">
             <div class="message" role="status">${flash.message}</div>
             </g:if>
@@ -49,6 +68,11 @@
                     <g:submitButton name="create" class="save" value="${message(code: 'default.button.create.label', default: 'Create')}" />
                 </fieldset>
             </g:form>
+        </div>
+        <div class = "contenedor2">
+            <div class = "bottom-two">
+            <h4>You can access the trips by clicking on the 'Trip List' button</h4>
+            </div>
         </div>
     </body>
 </html>

@@ -57,7 +57,7 @@
         </div>
         <div class = "contenedor2">
              <div class = "bottom-two">
-                 <h6>Ingrese la posición de la lista de la cual deseas obtener el viaje:</h6>
+                 <h1>Enter the position of the list from which you wish to obtain the trip:</h1>
              </div>
              <div class = "bottom-two">
                 <input type="text" name="name" id="uniqueID" value="1" />
@@ -82,7 +82,7 @@
         <div class = "contenedor2">
            <div class = "bottom-two">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8153530.352985884!2d-69.44344204916317!3d-3.7631118114641318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x92183f5c8b1d6ed1%3A0x176d6af66b3c2efa!2sState%20of%20Amazonas%2C%20Brazil!5e0!3m2!1sen!2sco!4v1569367069524!5m2!1sen!2sco" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-        </div>
+            </div>
         </div>
     </body>
 </html>
